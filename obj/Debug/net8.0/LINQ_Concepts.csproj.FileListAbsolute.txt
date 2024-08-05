@@ -1,0 +1,14 @@
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\bin\Debug\net8.0\LINQ_Concepts.exe
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\bin\Debug\net8.0\LINQ_Concepts.deps.json
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\bin\Debug\net8.0\LINQ_Concepts.runtimeconfig.json
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\bin\Debug\net8.0\LINQ_Concepts.dll
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\bin\Debug\net8.0\LINQ_Concepts.pdb
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.GeneratedMSBuildEditorConfig.editorconfig
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.AssemblyInfoInputs.cache
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.AssemblyInfo.cs
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.csproj.CoreCompileInputs.cache
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.dll
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\refint\LINQ_Concepts.dll
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.pdb
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.genruntimeconfig.cache
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\ref\LINQ_Concepts.dll
