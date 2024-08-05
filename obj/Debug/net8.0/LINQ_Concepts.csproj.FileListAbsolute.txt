@@ -12,3 +12,4 @@ F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Co
 F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.pdb
 F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.genruntimeconfig.cache
 F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\ref\LINQ_Concepts.dll
+F:\turkiano\Turki's stuff\000 - C#\Lessons\C# Fundamentals\LINQ Concepts\LINQ_Concepts\obj\Debug\net8.0\LINQ_Concepts.sourcelink.json
