@@ -1,30 +1,31 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
+﻿
+
+namespace LINQ_Method_Syntax;
 
 					
 public class Program
 {
 	public static void Main()
 	{
-		// string collection
-		IList<string> stringList = new List<string>() { 
-			"C# Tutorials",
-			"VB.NET Tutorials",
-			"Learn C++",
-			"MVC Tutorials" ,
-			"Java" 
-		};
+		// Student collection
+		IList<Student> studentList = new List<Student>() { 
+				new Student() { StudentID = 1, StudentName = "John", Age = 13} ,
+				new Student() { StudentID = 2, StudentName = "Moin",  Age = 21 } ,
+				new Student() { StudentID = 3, StudentName = "Bill",  Age = 18 } ,
+				new Student() { StudentID = 4, StudentName = "Ram" , Age = 20} ,
+				new Student() { StudentID = 5, StudentName = "Ron" , Age = 15 } 
+			};
 		
-		// LINQ Method Syntax
-		var result = stringList.Where(s => s.Contains("Tutorials"));
+		// LINQ Query Method to find out teenager students
+		var teenAgerStudent = studentList.Where(s => s.Age > 12 && s.Age < 20);
+							  
+		Console.WriteLine("Teen age Students:");
 
-					
-		
-        //LINQ Executation
-		foreach (var str in result)
-		{
-			Console.WriteLine(str);
+
+		//LINQ Executaion using foreach loop				  
+		foreach(Student std in teenAgerStudent){			
+			Console.WriteLine(std.StudentName);
 		}
 	}
 }
+
