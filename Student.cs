@@ -1,6 +1,8 @@
 
 
-namespace LINQ_Method_Syntax;
+namespace Lambda_Expression;
+
+//this is the class entities of each student
 public class Student{
 
 	public int StudentID { get; set; }
