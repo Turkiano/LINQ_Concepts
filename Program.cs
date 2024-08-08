@@ -8,12 +8,12 @@ public class Program
 
     public static void Main()
     {
-        //assigning Lambda to the built-in Delegate (Func)
-        Func<Student, bool> isStudentTeenAger = s => s.Age > 12 && s.Age < 20;
+        Action<Student> PrintStudentDetail = s =>
+        Console.WriteLine("Name: {0}, Age: {1} ", s.StudentName, s.Age);
 
-        Student stud = new Student() { Age = 21 };
+        Student std = new Student() { StudentName = "Bill", Age = 21 };
 
-        Console.WriteLine(isStudentTeenAger(stud));
+        PrintStudentDetail(std);
 
 
     }
