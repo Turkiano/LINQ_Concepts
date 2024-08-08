@@ -1,25 +1,32 @@
 ﻿using System;
 namespace Lambda_Expression;
 
-
 public class Program
 {
-    delegate bool IsYoungerThan(Student stud, int youngAge);
+    delegate bool IsAdult(Student stud);
 
     public static void Main()
     {
-        IsYoungerThan isYoungerThan = (s, youngAge) =>
-        {
-            //statement 01.
-            Console.WriteLine("Lambda expression with multiple statements in the body");
+        IsAdult isAdult = (s) =>
 
-            //statement 02.
-            return s.Age < youngAge;
+        { 
+
+            //statement 01. local variable
+            int adultAge = 18; 
+
+            //statement 02. print a message
+            Console.WriteLine("Lambda expression with multiple statements in the body");
+            
+            //statement 03. check if age is greater or equal 18
+            return s.Age >= adultAge;
         };
+
+
 
         Student stud = new Student() { Age = 25 };
 
-        Console.WriteLine(isYoungerThan(stud, 26));
+        Console.WriteLine(isAdult(stud));
+
 
     }
 }
