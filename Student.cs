@@ -1,6 +1,6 @@
 
 
-namespace Lambda_Expression;
+namespace Delegate_Example;
 
 //this is the class entities of each student
 public class Student{
