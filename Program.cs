@@ -17,4 +17,4 @@ public class Program
 
 
     }
-}//testing
+}//The output is Name: Bill, Age: 21
