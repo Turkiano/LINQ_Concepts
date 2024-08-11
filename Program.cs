@@ -11,7 +11,7 @@ public class Program
 		//this is the lambda expression with 2 parameters
 		IsYoungerThan isYoungerThan = (s, youngAge) =>
 		{
-			//statement 01.
+			//statement 01. Console header
 			Console.WriteLine("Lambda expression with multiple statements in the body");
 
 			//statement 02.
@@ -19,10 +19,11 @@ public class Program
 		};
 		//data source/ student object
 		Student stud = new Student() { Age = 25 };
+		
 		//delegate executation
 		Console.WriteLine(isYoungerThan(stud, 26));
 
 	}
 
-	//testing
+	//the output is true, since 25 is less than 26
 }
