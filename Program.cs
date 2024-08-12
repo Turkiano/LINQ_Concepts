@@ -17,17 +17,26 @@ public class Program
 				new Student() { StudentID = 4, StudentName = "Ram" , Age = 20} ,
 				new Student() { StudentID = 5, StudentName = "Ron" , Age = 15 } 
 			};
-		
+		//Delegate assigned to lambda expression
 		Func<Student, bool> isStudentTeenAger = s => s.Age > 12 && s.Age < 20;
 		
+		//LINQ Query Syntax = SQL
 		var teenAgerStudents = from s in studentList
                    where isStudentTeenAger(s)
                    select s;
 							  
 		Console.WriteLine("Teen age Students:");
-						  
+					
+					//The executation of LINQ Query	  
 		foreach(Student std in teenAgerStudents){			
 			Console.WriteLine(std.StudentName);
 		}
 	}
-}//testing
+}
+/*
+The output is the following
+Teen age Students:
+John
+Bill
+Ron 
+*/
