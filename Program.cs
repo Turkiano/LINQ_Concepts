@@ -20,7 +20,7 @@ public class Program
         //lambda expression with Func delegate
         Func<Student, bool> isStudentTeenAger = s => s.Age > 12 && s.Age < 20;
 
-        //filtering students using LINQ
+        //filtering students using LINQ (Method Syntax)
         var teenAgerStudent = studentList.Where(isStudentTeenAger);
 
         //print a header to the console
