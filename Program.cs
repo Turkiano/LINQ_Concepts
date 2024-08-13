@@ -1,33 +1,23 @@
-﻿//Example: Where clause - LINQ query syntax C#
-using System;
-using System.Linq;
+﻿using System;
 using System.Collections.Generic;
-
-namespace Where_Query_Syntax;
+using System.Linq;
 
 public class Program
 {
     public static void Main()
     {
-        // Student collection
-        IList<Student> studentList = new List<Student>() {
-                new Student() { StudentID = 1, StudentName = "John", Age = 13} ,
-                new Student() { StudentID = 2, StudentName = "Moin",  Age = 21 } ,
-                new Student() { StudentID = 3, StudentName = "Bill",  Age = 18 } ,
-                new Student() { StudentID = 4, StudentName = "Ram" , Age = 20} ,
-                new Student() { StudentID = 5, StudentName = "Ron" , Age = 15 }
-            };
+        // Sample list of integers
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-        // LINQ Query Syntax to find out teenager students
-        var teenAgerStudent = from s in studentList
-                              where s.Age > 12 && s.Age < 20
-                              select s;
-        Console.WriteLine("Teen age Students:");
+        // Use Where with a predicate that checks if the number is even
+        IEnumerable<int> evenNumbers = numbers.Where(n => n % 2 == 0);
 
+        Console.WriteLine("Even numbers:"); //console header
 
-        foreach (Student std in teenAgerStudent)
+        //Executation
+        foreach (var num in evenNumbers)
         {
-            Console.WriteLine(std.StudentName);
+            Console.WriteLine(num);
         }
     }
 }
