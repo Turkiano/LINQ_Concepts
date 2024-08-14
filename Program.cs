@@ -1,45 +1,30 @@
-﻿class Program
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main()
     {
-        Student[] studentArray = {
-                    new Student() { StudentID = 1, StudentName = "John", age = 18 } ,
-                    new Student() { StudentID = 2, StudentName = "Steve",  age = 21 } ,
-                    new Student() { StudentID = 3, StudentName = "Bill",  age = 25 } ,
-                    new Student() { StudentID = 4, StudentName = "Ram" , age = 20 } ,
-                    new Student() { StudentID = 5, StudentName = "Ron" , age = 31 } ,
-                    new Student() { StudentID = 6, StudentName = "Chris",  age = 17 } ,
-                    new Student() { StudentID = 7, StudentName = "Rob",age = 19  } ,
-                };
+        // Initialize three lists with different types and values
+        IList<int> intList = new List<int>() { 7, 10, 21, 30, 45, 50, 87 };
+        IList<string> strList = new List<string>() { null, "Two", "Three", "Four", "Five" };
+        IList<string> emptyList = new List<string>();
+        
+        // Retrieve and print the first element of intList
+        Console.WriteLine("01.1st Element in intList: {0}", intList.First());
+        
+        // Retrieve and print the first even element of intList
+        Console.WriteLine("02.1st Even Element in intList: {0}", intList.First(i => i % 2 == 0));
+        
+        // Retrieve and print the first element of strList
+        Console.WriteLine("03.1st Element in strList: {0}", strList.First());
 
-        //  LINQ Method syntax to find teenager students
-        Student[] teenAgerStudents = studentArray.Where(s => s.age > 12 && s.age < 20).ToArray();
-
-        //  LINQ Method syntax  to find first student whose name is Bill 
-        Student? bill = studentArray.Where(s => s.StudentName == "Bill").FirstOrDefault();
-
-        //  LINQ Method syntax  to find student whose StudentID is 5
-        Student? student5 = studentArray.Where(s => s.StudentID == 5).FirstOrDefault();
-
-
-
-        // LINQ Executation
-        foreach (Student filtered in teenAgerStudents)
-        {
-            Console.WriteLine(filtered.StudentName);
-
-        }
-
-
-
-
-       
-
-
-       
+        // Note in the code: emptyList.First() will throw an InvalidOperationException
+        Console.WriteLine("04.emptyList.First() throws an InvalidOperationException");
+        Console.WriteLine("-------------------------------------------------------------");
+        
+        // Attempt to retrieve the first element of an empty list (this will cause an exception)
+        Console.WriteLine(emptyList.First());
     }
-
 }
-
-
-
